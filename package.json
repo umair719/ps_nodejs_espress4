@@ -22,6 +22,7 @@
   "homepage": "https://github.com/umair719/ps_nodejs_espress4#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-inject": "^4.0.0",
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^2.0.0",
     "jscs": "^2.11.0",
