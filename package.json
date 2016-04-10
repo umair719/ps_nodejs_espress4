@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
-
   },
   "repository": {
     "type": "git",
@@ -15,10 +14,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express" : "^4.13.3"
+    "express": "^4.13.3"
   },
   "bugs": {
     "url": "https://github.com/umair719/ps_nodejs_espress4/issues"
   },
-  "homepage": "https://github.com/umair719/ps_nodejs_espress4#readme"
+  "homepage": "https://github.com/umair719/ps_nodejs_espress4#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  }
 }
