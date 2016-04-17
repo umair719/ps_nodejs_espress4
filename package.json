@@ -14,7 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "ejs": "^2.4.1",
+    "express": "^4.13.3",
+    "express-handlebars": "^3.0.0",
+    "jade": "^1.11.0"
   },
   "bugs": {
     "url": "https://github.com/umair719/ps_nodejs_espress4/issues"

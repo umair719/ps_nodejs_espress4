@@ -11,10 +11,40 @@ var port = process.env.PORT || 5000;
 
 app.use(express.static('public'));
 
-app.use(express.static('src/views'));
+app.set('views', './src/views');
+
+var bookRouter = express.Router();
+
+app.set('view engine', 'ejs');
+
+bookRouter('/')
+    .get(function (req, res) {
+        res.send('Hello Books');
+    });
+
+bookRouter.route('/single')
+    .get(function (req, res) {
+        res.send('Hello Single Book');
+    });
+
+app.use('/Books', bookRouter);
 
 app.get('/', function (req, res) {
-    res.send("hello world");
+    res.render('index',
+        {
+            title: "Hello from render",
+            nav: [
+                {
+                    Link: '/Books',
+                    Text: 'Books'
+                },
+                {
+                    Link: '/Authors',
+                    Text: 'Authors'
+                }
+            ],
+            list: ['a', 'b']
+        });
 });
 
 
