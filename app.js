@@ -17,7 +17,7 @@ var bookRouter = express.Router();
 
 app.set('view engine', 'ejs');
 
-bookRouter('/')
+bookRouter.route('/')
     .get(function (req, res) {
         res.send('Hello Books');
     });
