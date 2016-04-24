@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid ps_nodejs_espress4@1.0.0
 16 verbose cwd /Users/umair/Documents/projects/ps_nodejs_espress4
-17 error Darwin 15.3.0
+17 error Darwin 15.4.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 19 error node v5.10.0
 20 error npm  v3.8.3
