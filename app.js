@@ -22,7 +22,11 @@ var nav = [
 
 var bookRouter = require('./src/routes/bookRoutes')(nav);
 
+var authorRouter = require('./src/routes/authorRoutes')(nav);
+
 app.use('/Books', bookRouter);
+
+app.use('/Authors', authorRouter);
 
 app.use(express.static('public'));
 

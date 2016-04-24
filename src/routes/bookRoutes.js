@@ -9,12 +9,14 @@ var bookRouter = express.Router();
 var router = function (nav) {
     var books = [
         {
+            id: 0,
             title: 'War and Peace',
             genre: 'Historical Fiction',
             author: 'Lev Nikolayench Tolstoy',
             read: false
         },
         {
+            id: 1,
             title: 'Les Miserables',
             genre: 'Historical Fiction',
             author: 'Victor Hugo',
