@@ -22,21 +22,23 @@ var books = [
     }
 ];
 
+var nav = [
+    {
+        Link: '/Books',
+        Text: 'Books'
+    },
+    {
+        Link: '/Authors',
+        Text: 'Authors'
+    }
+];
+
 bookRouter.route('/')
     .get(function (req, res) {
-        res.render('books',
+        res.render('bookListView',
             {
                 title: "Books",
-                nav: [
-                    {
-                        Link: '/Books',
-                        Text: 'Books'
-                    },
-                    {
-                        Link: '/Authors',
-                        Text: 'Authors'
-                    }
-                ],
+                nav: nav,
                 books: books
             });
     });
@@ -44,18 +46,9 @@ bookRouter.route('/')
 bookRouter.route('/:id')
     .get(function (req, res) {
         var id = req.params.id;
-        res.render('books', {
+        res.render('bookView', {
             title: 'Books',
-            nav: [
-                {
-                    Link: '/Books',
-                    Text: 'Books'
-                },
-                {
-                    Link: '/Authors',
-                    Text: 'Authors'
-                }
-            ],
+            nav: nav,
             book: books[id]
         });
     });
